@@ -1,0 +1,6 @@
+import "hashes/sha256/512bitPacked" as sha256packed
+
+// docId
+def main(private field[2] docId, private field[2] partyId) -> field[2]:
+    field[2] h = sha256packed([docId, partyId])
+    return h
